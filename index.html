@@ -395,7 +395,7 @@
 <div class="toast-container" id="toastContainer"></div>
 
 <script>
-    // --------------------------------------------------------------
+    // ---------------------------------------------
     // FIREBASE CONFIG (same as original)
     const firebaseConfig = {
         apiKey: "AIzaSyBhPcZ3bxj8irRKHbCNT94DgXXzKRMeS44",
@@ -679,7 +679,7 @@
     }
     let html = '';
     snap.forEach(doc => {
-        const n = doc.data();
+    const n = doc.data();
         let dateStr = 'N/A';
         if (n.createdAt) {
             const date = n.createdAt.toDate(); // Firestore timestamp → JS Date
